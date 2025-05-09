@@ -43,5 +43,23 @@ question_break
 2. 	Declare a second variable to store the above value as an 
     integer. Use type-casting on the above variable to achieve 
     this. Use a meaningful variable name and proper naming conventions.
+
+3.	Print each variable keeping in mind the formatting of the output 
+    as shown below: Editors note: I did not get the format woopsie haha. 
 """
 savings_account = 5039.32
+integer_savings_account = int(savings_account)
+
+print(f"Savings Account Raw Data:{savings_account}\nSavings Account:$ "
+      f"{integer_savings_account:,.2f}")
+
+question_break
+
+"""
+4.	Write a program that uses a list of tuples, where each tuple 
+    contains the name flower item and its corresponding cost. Print 
+    the list of tuples.
+ex. [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), ('iris', 0.89)]
+"""
+
+flower_list =
