@@ -20,14 +20,28 @@ Name: Jo-Anne Sinclair
 Salary: $123,093.00
 
 """
+question_break = print("\n************************\n")
 
 # 1. Define a print statement that will produce the following output:
 #    Jo-Anne Sinclair: 123093
 print("Jo-Anne Sinclair: 123093")
 
-print("************************")
+question_break
 
 name = "Jo-Anne Sinclair"
 salary = 123093
 
 print(f"Name: {name}\nSalary: {salary:,.2f}")
+
+question_break
+
+"""
+1.	Declare a variable to store the balance of a savings account. 
+    The current balance is 5039.32.Use a meaningful variable name 
+    and proper naming conventions.
+
+2. 	Declare a second variable to store the above value as an 
+    integer. Use type-casting on the above variable to achieve 
+    this. Use a meaningful variable name and proper naming conventions.
+"""
+savings_account = 5039.32
