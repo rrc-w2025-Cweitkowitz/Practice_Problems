@@ -23,3 +23,11 @@ Salary: $123,093.00
 
 # 1. Define a print statement that will produce the following output:
 #    Jo-Anne Sinclair: 123093
+print("Jo-Anne Sinclair: 123093")
+
+print("************************")
+
+name = "Jo-Anne Sinclair"
+salary = 123093
+
+print(f"Name: {name}\nSalary: {salary:,.2f}")
