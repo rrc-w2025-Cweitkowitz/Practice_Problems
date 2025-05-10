@@ -59,7 +59,19 @@ question_break
 4.	Write a program that uses a list of tuples, where each tuple 
     contains the name flower item and its corresponding cost. Print 
     the list of tuples.
-ex. [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), ('iris', 0.89)]
+ex. [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), 
+    ('iris', 0.89)]
 """
 
-flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), ('iris', 0.89)]
+flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), 
+               ('iris', 0.89)]
+
+"""
+5.	Add a list of dictionaries. Each dictionary will have two key-value 
+    pairs. The keys will be "name" and "flower" while the values will be 
+    a person's actual name, and the name of their favorite flower. Print 
+    the list of dictionaries.
+"""
+
+[{'name': 'Alice', 'flower': 'carnation'}, {'name': 'Fred', 'flower': 'Iris'}, 
+ {'name': 'Dave', 'flower': 'tulip'}, {'name': 'Jerry', 'flower': 'rose'},]
