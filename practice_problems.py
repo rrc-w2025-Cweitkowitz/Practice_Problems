@@ -62,4 +62,4 @@ question_break
 ex. [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), ('iris', 0.89)]
 """
 
-flower_list =
+flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), ('iris', 0.89)]
