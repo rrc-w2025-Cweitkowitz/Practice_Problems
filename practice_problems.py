@@ -66,6 +66,8 @@ ex. [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99),
 flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), 
                ('iris', 0.89)]
 
+question_break
+
 """
 5.	Add a list of dictionaries. Each dictionary will have two key-value 
     pairs. The keys will be "name" and "flower" while the values will be 
@@ -75,3 +77,15 @@ flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99),
 
 [{'name': 'Alice', 'flower': 'carnation'}, {'name': 'Fred', 'flower': 'Iris'}, 
  {'name': 'Dave', 'flower': 'tulip'}, {'name': 'Jerry', 'flower': 'rose'},]
+
+question_break
+
+"""
+6.	Add two sets each with values of your choice. Print a new set 
+    containing only the values that appear in both.
+"""
+heirloom_warframes = {'Frost', 'Mag', 'Ember', 'Rhino'}
+prime_warframes = {'Excalibur', 'Volt', 'Ember', 'Saryn', 'Rhino', 'Hildryn'}
+warframe_intersection = heirloom_warframes.intersection(prime_warframes)
+
+print(warframe_intersection)
