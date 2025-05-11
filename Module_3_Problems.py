@@ -10,6 +10,7 @@ ___version___ = "11/05/2025"
 
 from Module_2_Problems import question_break
 import random
+import math
 
 def module_3_problems():
     """
@@ -22,14 +23,19 @@ def module_3_problems():
     
     print(f"{number_1:,.2f}, {number_2:,.2f}")
     print(f"{min_number:,.2f}")
+    print(question_break)
     
-
     """
     2.  Write a program that takes a float as an input, then computes and outputs
         the cube of that number using the pow method of the math module.
     """
+    float_input = float(input("Please enter a float number: "))
+    
+    print(f"Your number is {float_input}")
 
-    question_break
+    cube_input = float_input ** 3
+    
+    print(f"Your number cubed is {cube_input}")
 
     """
     3.  Write a program that reads from the keyboard the radius of a circle. 
@@ -37,14 +43,14 @@ def module_3_problems():
     You can use the following formulas: math formula goes here haha :3c
     """
 
-    question_break
+
 
     """
     4.	Write a program that generates five random integers between 60 and 
     100 and calculates the smallest of the five numbers.
     """
 
-    question_break
+
 
     """
     5.	Write a program that generates three random integers between 0 and 

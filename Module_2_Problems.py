@@ -9,7 +9,7 @@ up to date.
 ___author___ = "Connor Weitkowitz"
 ___version___ = "09/05/2025"
 
-question_break = print("\n************************\n")
+question_break = ("\n************************\n")
 
 def module_2_problems():
     """
@@ -29,14 +29,14 @@ def module_2_problems():
     #    Jo-Anne Sinclair: 123093
     print("Jo-Anne Sinclair: 123093")
 
-    question_break
+    print(question_break)
 
     name = "Jo-Anne Sinclair"
     salary = 123093
 
     print(f"Name: {name}\nSalary: {salary:,.2f}")
 
-    question_break
+    print(question_break)
 
     """
     1.	Declare a variable to store the balance of a savings account. 
@@ -56,7 +56,7 @@ def module_2_problems():
     print(f"Savings Account Raw Data:{savings_account}\nSavings Account:$ "
         f"{integer_savings_account:,.2f}")
 
-    question_break
+    print(question_break)
 
     """
     4.	Write a program that uses a list of tuples, where each tuple 
@@ -69,7 +69,7 @@ def module_2_problems():
     flower_list = [('carnation', 1.79), ('tulip', 0.77), ('rose', 3.99), 
                 ('iris', 0.89)]
 
-    question_break
+    print(question_break)
 
     """
     5.	Add a list of dictionaries. Each dictionary will have two key-value 
@@ -81,7 +81,7 @@ def module_2_problems():
     [{'name': 'Alice', 'flower': 'carnation'}, {'name': 'Fred', 'flower': 'Iris'}, 
     {'name': 'Dave', 'flower': 'tulip'}, {'name': 'Jerry', 'flower': 'rose'},]
 
-    question_break
+    print(question_break)
 
     """
     6.	Add two sets each with values of your choice. Print a new set 
