@@ -9,15 +9,20 @@ ___author___ = "Connor Weitkowitz"
 ___version___ = "11/05/2025"
 
 from Module_2_Problems import question_break
-
+import random
 
 def module_3_problems():
     """
     1.  Write a program that generates two random numbers between 0 and 100 
         and prints the smaller of the two numbers.
     """
-
-    question_break
+    number_1 = random.uniform(0, 100)
+    number_2 = random.uniform(0, 100)
+    min_number = min(number_1,number_2)
+    
+    print(f"{number_1:,.2f}, {number_2:,.2f}")
+    print(f"{min_number:,.2f}")
+    
 
     """
     2.  Write a program that takes a float as an input, then computes and outputs
@@ -45,5 +50,8 @@ def module_3_problems():
     5.	Write a program that generates three random integers between 0 and 
     50, calculates the average, and prints the result to one decimal place.
     """
+
+module_3_problems()
+
 if __name__ == '__Main__':
     module_3_problems()
