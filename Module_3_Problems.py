@@ -29,7 +29,8 @@ def module_3_problems():
     2.  Write a program that takes a float as an input, then computes and outputs
         the cube of that number using the pow method of the math module.
     """
-    float_input = float(input("Please enter a float number: "))
+    # Turning into non input for ease of use in rest of program
+    float_input = float("30.55")
     
     print(f"Your number is {float_input}")
 
