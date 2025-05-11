@@ -43,8 +43,11 @@ def module_3_problems():
     Calculate and output the area and the circumference of that circle. 
     You can use the following formulas: math formula goes here haha :3c
     """
+    radius = 5
+    circumference = 2 * math.pi * radius
+    area = math.pi * (5 ** 2)
 
-
+    print(f"C of a circle is: {circumference:,.2f}\nArea of the circle is: {area:,.2f}")
 
     """
     4.	Write a program that generates five random integers between 60 and 
