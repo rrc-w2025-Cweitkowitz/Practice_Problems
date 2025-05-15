@@ -37,6 +37,7 @@ def module_3_problems():
     cube_input = float_input ** 3
     
     print(f"Your number cubed is {cube_input}")
+    print(question_break)
 
     """
     3.  Write a program that reads from the keyboard the radius of a circle. 
@@ -48,13 +49,20 @@ def module_3_problems():
     area = math.pi * (5 ** 2)
 
     print(f"C of a circle is: {circumference:,.2f}\nArea of the circle is: {area:,.2f}")
-
+    print(question_break)
     """
     4.	Write a program that generates five random integers between 60 and 
     100 and calculates the smallest of the five numbers.
     """
-
-
+    counter = 0
+    if counter != 5:
+        counter += 1
+        number_list = [random.uniform(60, 100)]
+        sorted_numbers = sorted(number_list)
+        print(f"Number list is {number_list}")
+        print(f"Sorted number list is{sorted_numbers}")
+        print(f"Lowest number is {sorted_numbers[0]}")
+        print(question_break)
 
     """
     5.	Write a program that generates three random integers between 0 and 
