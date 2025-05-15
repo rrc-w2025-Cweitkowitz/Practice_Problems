@@ -54,10 +54,11 @@ def module_3_problems():
     4.	Write a program that generates five random integers between 60 and 
     100 and calculates the smallest of the five numbers.
     """
-    counter = 0
-    if counter != 5:
-        counter += 1
-        number_list = [random.uniform(60, 100)]
+    number_list = []
+
+    for number in range(0, 5):
+        rng = random.randint(60, 100)
+        number_list.append(rng)
         sorted_numbers = sorted(number_list)
         print(f"Number list is {number_list}")
         print(f"Sorted number list is{sorted_numbers}")
