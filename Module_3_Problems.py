@@ -67,8 +67,9 @@ def module_3_problems():
         print(question_break)
 
     """
-    5.	Write a program that generates three random integers between 0 and 
-    50, calculates the average, and prints the result to one decimal place.
+    5.	Write a program that generates three random integers between 0 
+    and 50, calculates the average, and prints the result to one decimal 
+    place.
     """
     num_list = []
     for number in range(0, 3):
@@ -78,6 +79,32 @@ def module_3_problems():
     print(f"Your random numbers are: {num_list}")
     print(f"The mean of the number is: {statistics.mean(num_list):,.2f}")
     print(question_break)
+
+    """
+    6. Write a program that takes two integers as input from the 
+    keyboard, representing the number of hits and the number of at-bats 
+    for a batter. Then calculate the batters hitting percentage and 
+    check if the hitting percentage is above .300. If it is, output that 
+    the player is eligible for the All Stars Game; otherwise, output 
+    that the player is not eligible.
+    """
+
+    total_number_of_hits = input("Please enter your total number of hits: ")
+    total_number_of_bats = input("Please enter your total number of bats: ")
+    batting_average = int(total_number_of_hits) / int(total_number_of_bats)
+    
+    print(f"Your total number of hits are: {total_number_of_hits}\n"
+          f"Your total number of bats is: {total_number_of_bats}\n"
+          f"Your batting average is {batting_average}")
+    if batting_average < .300:
+        print("Im sorry but you are not eligable for all star status :(")
+    else:
+        print("YaaaY!!! you are an all star now, just like that guy who did " 
+              "the thing with a baseball!!")
+    
+
+    
+
 module_3_problems()
 
 if __name__ == '__Main__':
