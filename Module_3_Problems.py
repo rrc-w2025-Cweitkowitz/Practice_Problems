@@ -116,7 +116,8 @@ def module_3_problems():
         keyboard and outputs whether it is a valid character to start a 
         variable identifier.
     """
-    char_check = input("Enter a character to check if it can be a variable: ")
+    # input("Enter a character to check if it can be a variable: ")
+    char_check = "R"
 
     for character in char_check:
         if character.isalpha:
