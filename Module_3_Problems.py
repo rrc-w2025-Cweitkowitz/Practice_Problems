@@ -26,6 +26,7 @@ def module_3_problems():
     print(f"{min_number:,.2f}")
     print(question_break)
     
+
     """
     2.  Write a program that takes a float as an input, then computes and outputs
         the cube of that number using the pow method of the math module.
@@ -40,6 +41,7 @@ def module_3_problems():
     print(f"Your number cubed is {cube_input}")
     print(question_break)
 
+
     """
     3.  Write a program that reads from the keyboard the radius of a circle. 
     Calculate and output the area and the circumference of that circle. 
@@ -51,6 +53,8 @@ def module_3_problems():
 
     print(f"C of a circle is: {circumference:,.2f}\nArea of the circle is: {area:,.2f}")
     print(question_break)
+    
+    
     """
     4.	Write a program that generates five random integers between 60 and 
     100 and calculates the smallest of the five numbers.
@@ -66,6 +70,7 @@ def module_3_problems():
         print(f"Lowest number is {sorted_numbers[0]}")
         print(question_break)
 
+
     """
     5.	Write a program that generates three random integers between 0 
     and 50, calculates the average, and prints the result to one decimal 
@@ -80,6 +85,7 @@ def module_3_problems():
     print(f"The mean of the number is: {statistics.mean(num_list):,.2f}")
     print(question_break)
 
+
     """
     6. Write a program that takes two integers as input from the 
     keyboard, representing the number of hits and the number of at-bats 
@@ -88,9 +94,10 @@ def module_3_problems():
     the player is eligible for the All Stars Game; otherwise, output 
     that the player is not eligible.
     """
-
-    total_number_of_hits = input("Please enter your total number of hits: ")
-    total_number_of_bats = input("Please enter your total number of bats: ")
+# input("Please enter your total number of hits: ")
+# input("Please enter your total number of bats: ")
+    total_number_of_hits = 5000
+    total_number_of_bats = 25
     batting_average = int(total_number_of_hits) / int(total_number_of_bats)
     
     print(f"Your total number of hits are: {total_number_of_hits}\n"
@@ -101,10 +108,23 @@ def module_3_problems():
     else:
         print("YaaaY!!! you are an all star now, just like that guy who did " 
               "the thing with a baseball!!")
+    print(question_break)
     
 
-    
+    """
+    7.	Write a program that reads a single char as an input from the 
+        keyboard and outputs whether it is a valid character to start a 
+        variable identifier.
+    """
+    char_check = input("Enter a character to check if it can be a variable: ")
 
+    for character in char_check:
+        if character.isalpha:
+            print(f"Yes you can use {char_check} as a varaible.")
+        else:
+            print(f"No, you cannot use {char_check} as a variable.")
+
+    print(question_break)
 module_3_problems()
 
 if __name__ == '__Main__':
