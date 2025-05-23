@@ -134,6 +134,20 @@ def module_3_problems():
         a period), interrogative (ends with a question mark), 
         exclamatory (ends with an exclamation point), or other.
     """
+    sentence = "What is the air speed velocity of an unladen swallow?"
+    sen_end = sentence[-1]
+    special_char = [".", "?", "!"]
+    
+    for char in special_char:
+        if sen_end == char:
+            if sen_end == special_char[0]:
+                print("This sentence is declarative.")
+            elif sen_end == special_char[1]:
+                print("This sentence is interrogative?")
+            elif sen_end == special_char[2]:
+                print("This sentence is exclamatory!")
+            elif sen_end != special_char:
+                print("This sentence is other.")
 
     
     
