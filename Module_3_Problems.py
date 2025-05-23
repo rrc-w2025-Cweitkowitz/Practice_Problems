@@ -126,6 +126,34 @@ def module_3_problems():
             print(f"No, you cannot use {char_check} as a variable.")
 
     print(question_break)
+
+    """
+    8.	Write a program that reads a sentence from the keyboard. 
+        Depending on the last character of the sentence, print a 
+        message identifying the sentence as declarative (ends with 
+        a period), interrogative (ends with a question mark), 
+        exclamatory (ends with an exclamation point), or other.
+    """
+
+    
+    
+    """
+    9.	An email address contains the @ character. Write a program 
+        that takes a word from the keyboard and outputs whether it is an 
+        email address based on the presence of the @ character. Do not 
+        worry about what else is in the word.
+    """
+
+    """
+    10.	Write a program that takes two words as input from the 
+    keyboard, representing a password and the same password again. 
+    (Often, websites ask users to type their password twice when they 
+    register to make sure there was no typo the first time around.) 
+    Your program should do the following:
+    """
+
+
+
 module_3_problems()
 
 if __name__ == '__Main__':
