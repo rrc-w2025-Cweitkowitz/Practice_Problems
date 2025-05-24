@@ -163,7 +163,7 @@ def module_3_problems():
     
     for letter in email:
         if letter == email_valid:
-            print("This is a valid email address"
+            print("This is a valid email address")
 
     """
     10.	Write a program that takes two words as input from the 
@@ -171,9 +171,61 @@ def module_3_problems():
     (Often, websites ask users to type their password twice when they 
     register to make sure there was no typo the first time around.) 
     Your program should do the following:
+    
+    if both passwords match, then output "You are now registered as a
+    new user"
+    otherwise, output "Sorry, there is a typo in your password"
+    """
+    # input("Please create a password: ")
+    password_input = print("Bababooey")
+    # input("Please re-type your password to verify i: ")
+    password_verify = print("Bababooey")
+
+    if password_input == password_verify:
+        print("You are now registered as a new user")
+    elif password_input != password_verify:
+        print("Sorry, there is a typo in your password")
+
+    print(question_break)
+
+    """
+    11.	Write a program that takes a word as input from the keyboard, 
+    representing a user ID. (Often, websites place constraints on user 
+    IDs.) Your program should do the following:
+
+    if the user ID contains between 6 and 10 characters inclusive, then 
+    output "Welcome, barbara" (assuming barbara is the user ID entered)
+    otherwise, output "Sorry, user ID invalid"
     """
 
+    """
+    12.	Write a program that reads a web address (for instance, 
+    www.yahoo.com) from the keyboard and outputs whether this web 
+    address is for a government, a university, a business, an 
+    organization, or another entity.
 
+    If the web address ends with gov, it is a government web address
+    If the web address ends with edu, it is a university web address
+    If the web address ends with com, it is a business web address
+    If the web address ends with org, it is an organization web address
+    Otherwise, it is a web address for another entity
+    """
+
+    """
+    13.	Write a program that reads a temperature as a whole number 
+    from the keyboard and outputs a "probable" season (winter, spring, 
+    summer, or fall) depending on the temperature.
+
+    If the temperature is greater than or equal to 90, it is probably 
+    summer.
+	If the temperature is greater than or equal to 70 and less than 90, 
+    it is probably spring.
+	If the temperature is greater than or equal to 50 and less than 70, 
+    it is probably fall.
+	If the temperature is less than 50, it is probably winter.
+	If the temperature is greater than 110 or less than −5, then you 
+    should output that the temperature entered is outside the valid range.
+    """
 
 module_3_problems()
 
