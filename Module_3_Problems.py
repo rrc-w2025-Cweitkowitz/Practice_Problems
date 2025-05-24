@@ -148,7 +148,8 @@ def module_3_problems():
                 print("This sentence is exclamatory!")
             elif sen_end != special_char:
                 print("This sentence is other.")
-
+    
+    print(question_break)
     
     
     """
@@ -157,6 +158,12 @@ def module_3_problems():
         email address based on the presence of the @ character. Do not 
         worry about what else is in the word.
     """
+    email = "DavidTheGnome@gnomemail.com"
+    email_valid = "@"
+    
+    for letter in email:
+        if letter == email_valid:
+            print("This is a valid email address"
 
     """
     10.	Write a program that takes two words as input from the 
