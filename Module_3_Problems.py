@@ -197,7 +197,22 @@ def module_3_problems():
     output "Welcome, barbara" (assuming barbara is the user ID entered)
     otherwise, output "Sorry, user ID invalid"
     """
+    # input("Please enter your user id: ").lower()
+    user_id = "BarbAra".lower()
+    correct_user_id = "barbara"
 
+    if user_id == correct_user_id and range(6,11):
+        print("Welcome, Barbara")
+    
+    elif user_id != range(6,11) or correct_user_id:
+        print("Incorrect user id length and user id.")
+
+    
+
+
+
+
+    
     """
     12.	Write a program that reads a web address (for instance, 
     www.yahoo.com) from the keyboard and outputs whether this web 
