@@ -292,8 +292,32 @@ def module_3_problems():
     If the year entered neither has two nor four charcters, output
         that the year is not valid.
     """
+    # input("Please enter a year, any year: ")
+    year_input = "2023"
+    
+    # Adds 20 to a two digit string input, to turn it into a year.
+    year_adder = "20"
+    year_loop_active = True
 
+    while year_loop_active == True:
+    
+        # Checks length of converted input to check 
+        # if it needs additonal numbers
+        if len(year_input) == 2:
+            complete_year = year_adder + year_input
+            complete_year_int = int(complete_year)
+            print(int(complete_year_int))
+            year_loop_active = False
+        
+        elif len(year_input) == 4:
+            year_int = int(year_input)
+            print(year_int)
+            year_loop_active = False
 
+        elif len(year_input) != 2 or 4:
+            print("Year entered is non-valid, please enter 2 or 4 " \
+            "numbers to continue")
+            year_loop_active = False
 
     """
     15. Write a program that takes two words as input from the keyboard
