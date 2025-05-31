@@ -207,11 +207,7 @@ def module_3_problems():
     elif user_id != range(6,11) or correct_user_id:
         print("Incorrect user id length and user id.")
 
-    
-
-
-
-
+    print(question_break)
     
     """
     12.	Write a program that reads a web address (for instance, 
@@ -225,6 +221,33 @@ def module_3_problems():
     If the web address ends with org, it is an organization web address
     Otherwise, it is a web address for another entity
     """
+    # input("Please enter a web adress: ")
+    web_address_input = "www.Firefox.com"
+    VALID_WEB = [".gov", ".edu", ".com", ".org"]
+    web_address_check = web_address_input[-4:]
+    web_challenge = True
+
+    for item in VALID_WEB:
+
+        if item == web_address_check:
+                
+            if web_address_check == ".gov":
+                print("This is a government website")
+            web_challenge == False
+            if web_address_check == ".edu":
+                print("This is a university website.")
+            web_challenge == False
+            if web_address_check == ".com":
+                print("this is a buisness website.")
+            web_challenge == False
+            if web_address_check == ".org":
+                print("This is an organization website.")
+            web_challenge == False
+        else:
+            print("This is either an invalid or other website.")
+        web_challenge == False
+
+    
 
     """
     13.	Write a program that reads a temperature as a whole number 
