@@ -245,7 +245,7 @@ def module_3_problems():
     elif web_address_check not in VALID_WEB:
         print("This web address is from somewhere else.")
 
-    
+    print(question_break)
 
     """
     13.	Write a program that reads a temperature as a whole number 
@@ -262,6 +262,25 @@ def module_3_problems():
 	If the temperature is greater than 110 or less than −5, then you 
     should output that the temperature entered is outside the valid range.
     """
+    # input(Please enter a temperature in farenheit: )
+    temp_check = 75
+    VALID_RANGE = range(-6, 111)
+
+    if temp_check in VALID_RANGE:
+        if temp_check >= 90:
+            print("Probably summer.")
+        if temp_check >= 70 < 90:
+            print("probably spring.")
+        if temp_check >= 50 < 70:
+            print("Probably fall.")
+        if temp_check < 50:
+            print("Probably Winter.")
+    else:
+        print("Temperature not in valid range.")
+    
+
+
+
 
 module_3_problems()
 
