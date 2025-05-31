@@ -225,27 +225,25 @@ def module_3_problems():
     web_address_input = "www.Firefox.com"
     VALID_WEB = [".gov", ".edu", ".com", ".org"]
     web_address_check = web_address_input[-4:]
-    web_challenge = True
 
-    for item in VALID_WEB:
+    if web_address_input == VALID_WEB[0]:
+        print("This is a government web address.")
 
-        if item == web_address_check:
-                
-            if web_address_check == ".gov":
-                print("This is a government website")
-            web_challenge == False
-            if web_address_check == ".edu":
-                print("This is a university website.")
-            web_challenge == False
-            if web_address_check == ".com":
-                print("this is a buisness website.")
-            web_challenge == False
-            if web_address_check == ".org":
-                print("This is an organization website.")
-            web_challenge == False
-        else:
-            print("This is either an invalid or other website.")
-        web_challenge == False
+    
+    elif web_address_check == VALID_WEB[1]:
+        print("This is a university web address.")
+
+    
+    elif web_address_check == VALID_WEB[2]:
+        print("This is a buisness web address.")
+
+    
+    elif web_address_check == VALID_WEB[3]:
+        print("This is an organization web address.")
+
+    
+    elif web_address_check not in VALID_WEB:
+        print("This web address is from somewhere else.")
 
     
 
