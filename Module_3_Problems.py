@@ -277,8 +277,57 @@ def module_3_problems():
             print("Probably Winter.")
     else:
         print("Temperature not in valid range.")
-    
 
+    print(question_break)
+    
+    """
+    14.Write a program that takes a string as an input from the 
+    keyboard, representing a year. Your program should do the 
+    following.
+
+    If the year entered has two characters, convert it to an integer,
+        add 2000 to it, and output it.
+    If the year entered has four characters, just convert it to an
+        integer and output it.
+    If the year entered neither has two nor four charcters, output
+        that the year is not valid.
+    """
+
+
+
+    """
+    15. Write a program that takes two words as input from the keyboard
+    ,representing a user ID and a password. Your program should do the 
+    following.
+
+    If the user ID and the password match "admin" and "open", 
+        respectively, then output "Welcome."
+    If the user ID mathces "admin" and the password does not match
+        "open", output "Wrong password."
+    If the password matches "open" and the user ID does not match 
+        "admin", output "Wrong user ID."
+    Otherwise, output "Sorry, wrong ID and password."
+    """
+    
+    
+    """
+    16.	Write a program that prompts the user for a value greater than 
+    10 as an input (you should loop until the user enters a valid 
+    value) and finds the square root of that number and the square root 
+    of the result, and continues to find the square root of the result 
+    until you reach a number that is smaller than 1.01. The program 
+    should output how many times the square root operation was 
+    performed.
+    """ 
+
+
+    """
+    17.	Write a program that expects a word containing the @ character 
+    as an input. If the word does not contain an @ character, then your 
+    program should keep prompting the user for a word. When the user 
+    types in a word containing an @ character, the program should simply 
+    print the word and terminate.
+    """
 
 
 
