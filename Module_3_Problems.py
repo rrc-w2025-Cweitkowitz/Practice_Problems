@@ -370,6 +370,9 @@ def module_3_problems():
             acct_pword_input not in account_info["Password"]:
             print("Sorry, wrong ID and password.")
             acct_loop = False
+
+    print(question_break)
+    
     """
     16.	Write a program that prompts the user for a value greater than 
     10 as an input (you should loop until the user enters a valid 
@@ -379,6 +382,21 @@ def module_3_problems():
     should output how many times the square root operation was 
     performed.
     """ 
+    number_input = input("Please enter a value greater then 10: ")
+    
+    # Loops until a number greater then 10 is chosen
+    while int(number_input) <= 10:
+        number_reinput = input("Enter a number greater then 10: ")
+        number_input = number_reinput
+    
+    # Only runs if a number greater then 10 is chosen.
+    # Turns teh int into a float to square and prints the result
+    # Result is also turned into a square, rounded to 2 decimal places
+    if int(number_input) > 10:
+        input_sqrt = math.sqrt(float(number_input))
+        print("Results will be rounded to 2 decimals.")
+        print(f"{input_sqrt:.2f}")
+        print(f"{math.sqrt(input_sqrt):.2f}")
 
 
     """
