@@ -344,24 +344,32 @@ def module_3_problems():
     acct_pword_input = "open"
     acct_loop = True
     
+    # Activates the loop and ensures it will not loop infinitely
     while acct_loop == True:    
         
+        # Checks dictionary for proper ID and p-word
         if acct_name_input in account_info["Account name"] \
             and acct_pword_input in account_info["Password"]:
             print("Welcome.")
             acct_loop = False
         
+        # Catches incorrect Password used for acct_info
         if acct_name_input in account_info["Account name"] and \
             acct_pword_input not in account_info["Password"]:
                 print("Wrong password.")
                 acct_loop = False
         
+        # Catches incorrect ID but correct password used
         if acct_name_input not in account_info["Account name"] and \
             acct_pword_input in account_info["Password"]:
                 print("Wrong used ID.")
                 acct_loop = False
-
-    
+        
+        # catches both ID and p-word inputs beign incorrect
+        if acct_name_input not in account_info["Account name"] and \
+            acct_pword_input not in account_info["Password"]:
+            print("Sorry, wrong ID and password.")
+            acct_loop = False
     """
     16.	Write a program that prompts the user for a value greater than 
     10 as an input (you should loop until the user enters a valid 
