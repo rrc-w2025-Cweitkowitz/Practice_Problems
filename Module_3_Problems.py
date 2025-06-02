@@ -335,18 +335,31 @@ def module_3_problems():
     Otherwise, output "Sorry, wrong ID and password."
     """
     account_info = {
-        "Account name": "admin",
+        "Account name": "dmin",
         "Password" : "open"
     }
     # input("Please enter your account name: ")
     acct_name_input = "admin"
     # input("Please enter your password: ")
     acct_pword_input = "open"
-
-    for acctinput in account_info:
-        if acct_name_input == account_info["Account name"] \
-            and acct_pword_input == account_info["Password"]:
-            print("Works yaay ")
+    acct_loop = True
+    
+    while acct_loop == True:    
+        
+        if acct_name_input in account_info["Account name"] \
+            and acct_pword_input in account_info["Password"]:
+            print("Welcome.")
+            acct_loop = False
+        
+        if acct_name_input in account_info["Account name"] and \
+            acct_pword_input not in account_info["Password"]:
+                print("Wrong password.")
+                acct_loop = False
+        
+        if acct_name_input not in account_info["Account name"] and \
+            acct_pword_input in account_info["Password"]:
+                print("Wrong used ID.")
+                acct_loop = False
 
     
     """
