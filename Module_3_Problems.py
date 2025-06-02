@@ -318,6 +318,8 @@ def module_3_problems():
             print("Year entered is non-valid, please enter 2 or 4 " \
             "numbers to continue")
             year_loop_active = False
+    print(question_break)
+    
 
     """
     15. Write a program that takes two words as input from the keyboard
@@ -332,7 +334,20 @@ def module_3_problems():
         "admin", output "Wrong user ID."
     Otherwise, output "Sorry, wrong ID and password."
     """
-    
+    account_info = {
+        "Account name": "admin",
+        "Password" : "open"
+    }
+    # input("Please enter your account name: ")
+    acct_name_input = "admin"
+    # input("Please enter your password: ")
+    acct_pword_input = "open"
+
+    for acctinput in account_info:
+        if acct_name_input == account_info["Account name"] \
+            and acct_pword_input == account_info["Password"]:
+            print("Works yaay ")
+
     
     """
     16.	Write a program that prompts the user for a value greater than 
