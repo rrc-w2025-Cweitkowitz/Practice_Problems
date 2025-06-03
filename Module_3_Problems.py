@@ -411,18 +411,17 @@ def module_3_problems():
     print the word and terminate.
     """
     at_input = input("Please enter a word with an @ symbol: ")
-    at_check = "@"
     at_loop = True
 
     while at_loop == True:
-        for char in at_input:
-            if char == at_check:
-                print(at_input)
-                at_loop = False
-            if at_check not in at_input:
+            # Checking input for an @ symbol and iterating until one is found
+            if "@" not in at_input:
                 re_input = input("Word must contain an @ symbol: ")
                 at_input = re_input
-
+            # Once an @ is detected, the word is printed and loop terminates
+            else:
+                print(at_input)
+                at_loop = False
 module_3_problems()
 
 if __name__ == '__Main__':
