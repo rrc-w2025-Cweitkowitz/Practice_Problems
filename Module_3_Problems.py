@@ -381,12 +381,15 @@ def module_3_problems():
     until you reach a number that is smaller than 1.01. The program 
     should output how many times the square root operation was 
     performed.
-    """ 
-    number_input = input("Please enter a value greater then 10: ")
+    """
+    # input("Please enter a value greater then 10: ")
+    number_input = 11
     
     # Loops until a number greater then 10 is chosen
     while int(number_input) <= 10:
-        number_reinput = input("Enter a number greater then 10: ")
+        
+        # input("Enter a number greater then 10: ")
+        number_reinput = 11
         number_input = number_reinput
     
     # Only runs if a number greater then 10 is chosen.
@@ -398,7 +401,8 @@ def module_3_problems():
         print(f"{input_sqrt:.2f}")
         print(f"{math.sqrt(input_sqrt):.2f}")
 
-
+    print(question_break)
+    
     """
     17.	Write a program that expects a word containing the @ character 
     as an input. If the word does not contain an @ character, then your 
@@ -406,8 +410,18 @@ def module_3_problems():
     types in a word containing an @ character, the program should simply 
     print the word and terminate.
     """
+    at_input = input("Please enter a word with an @ symbol: ")
+    at_check = "@"
+    at_loop = True
 
-
+    while at_loop == True:
+        for char in at_input:
+            if char == at_check:
+                print(at_input)
+                at_loop = False
+            if at_check not in at_input:
+                re_input = input("Word must contain an @ symbol: ")
+                at_input = re_input
 
 module_3_problems()
 
