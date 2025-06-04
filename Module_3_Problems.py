@@ -410,7 +410,9 @@ def module_3_problems():
     types in a word containing an @ character, the program should simply 
     print the word and terminate.
     """
-    at_input = input("Please enter a word with an @ symbol: ")
+
+    # input("Please enter a word with an @ symbol: ")
+    at_input = "@"
     at_loop = True
 
     while at_loop == True:
@@ -429,7 +431,10 @@ def module_3_problems():
     18.	Write a program that reads float values from a file named 
     input.txt and outputs the average.
     """
-    
+    with open("input.txt", "r") as file:
+        content = file.read()
+        file_numbers = print(content)
+        #average = sum(content) / len(content)
 
     """
     19.	Write a program that uses a for loop to output the sum of all 
