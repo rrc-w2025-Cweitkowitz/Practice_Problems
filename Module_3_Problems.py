@@ -431,11 +431,15 @@ def module_3_problems():
     18.	Write a program that reads float values from a file named 
     input.txt and outputs the average.
     """
+    floats = []
     with open("input.txt", "r") as file:
-        content = file.read()
-        file_numbers = print(content)
-        #average = sum(content) / len(content)
+        for file_float in file:
+            float_strip = file_float.strip()
+            float_num = float(float_strip)
+            floats.append(float_num)
 
+        average = sum(floats) / len(floats)
+        print(average)
     """
     19.	Write a program that uses a for loop to output the sum of all 
     the integers between 10 and 20, inclusive, that 
