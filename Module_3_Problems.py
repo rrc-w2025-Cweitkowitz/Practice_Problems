@@ -422,6 +422,40 @@ def module_3_problems():
             else:
                 print(at_input)
                 at_loop = False
+
+    print(question_break)
+
+    """
+    18.	Write a program that reads float values from a file named 
+    input.txt and outputs the average.
+    """
+    
+
+    """
+    19.	Write a program that uses a for loop to output the sum of all 
+    the integers between 10 and 20, inclusive, that 
+    is, 10 + 11 +12 + ... + 19 + 20.
+    """
+
+
+    """
+    20. Write a program that uses a for loop to output hte product of 
+    all the integers between 3 and 7, inclusive, that is, 3*4*5*6*7
+    """
+
+
+    """
+    21. Write a program that uses a for loop to count how many 
+    multiples of 7 are between 33 and 97, inclusive.
+    """
+
+
+    """
+    22. Write a program that reads an integer value from the user and
+    outputs Hello World the number of times entered by the user. Verify
+    that the user has entered an integer. If the input is 3, the output
+    will be Hello World printed three times.
+    """
 module_3_problems()
 
 if __name__ == '__Main__':
