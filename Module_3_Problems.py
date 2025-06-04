@@ -437,16 +437,19 @@ def module_3_problems():
             float_strip = file_float.strip()
             float_num = float(float_strip)
             floats.append(float_num)
-
+        # gets average by adding all the numbers and dividing them
+        # by the length of the list
         average = sum(floats) / len(floats)
         print(average)
+
+        print(question_break)
     """
     19.	Write a program that uses a for loop to output the sum of all 
     the integers between 10 and 20, inclusive, that 
     is, 10 + 11 +12 + ... + 19 + 20.
     """
-
-
+    for number in range(10, 21):
+        print(number)
     """
     20. Write a program that uses a for loop to output hte product of 
     all the integers between 3 and 7, inclusive, that is, 3*4*5*6*7
