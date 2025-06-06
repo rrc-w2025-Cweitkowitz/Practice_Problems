@@ -464,7 +464,7 @@ def module_3_problems():
     20. Write a program that uses a for loop to output the product of 
     all the integers between 3 and 7, inclusive, that is, 3*4*5*6*7
     """
-    for number in range(3,8):
+    for number in range(3,7):
         multi = number * (number + 1) 
         print(multi)
     """
