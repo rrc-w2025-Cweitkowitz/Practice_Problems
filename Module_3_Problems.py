@@ -448,14 +448,25 @@ def module_3_problems():
     the integers between 10 and 20, inclusive, that 
     is, 10 + 11 +12 + ... + 19 + 20.
     """
+    num_range = []
+    # iterates through a range of numbers from 10 to 20
+    # Appends to the num_range list
     for number in range(10, 21):
-        print(number)
+        num_range.append(number)
+        # Prints sum of all numbers in list once finished appending
+        # via a hard stop at the end.
+        if len(num_range) == 11:
+            print(sum(num_range))
+
+    print(question_break)
+
     """
-    20. Write a program that uses a for loop to output hte product of 
+    20. Write a program that uses a for loop to output the product of 
     all the integers between 3 and 7, inclusive, that is, 3*4*5*6*7
     """
-
-
+    for number in range(3,8):
+        multi = number * (number + 1) 
+        print(multi)
     """
     21. Write a program that uses a for loop to count how many 
     multiples of 7 are between 33 and 97, inclusive.
