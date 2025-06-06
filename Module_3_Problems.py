@@ -467,10 +467,21 @@ def module_3_problems():
     for number in range(3,7):
         multi = number * (number + 1) 
         print(multi)
+
+    print(question_break)
+
     """
     21. Write a program that uses a for loop to count how many 
     multiples of 7 are between 33 and 97, inclusive.
     """
+    seven_mult_count = 0
+    for number in range(33, 97):
+        seven_mult = number / 7
+        if seven_mult.is_integer():
+            seven_mult_count += 1
+
+    print(seven_mult_count)
+            
 
 
     """
