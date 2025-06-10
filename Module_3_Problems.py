@@ -503,26 +503,29 @@ def module_3_problems():
     int_count = 0
     loop_active = True
     
-    while loop_active == True:
+
+
+    while int_cast != int_count:
         #if not int_input.isnumeric:
             #int_input("Please enter a number: ")
         
-        # prints Hello World and increases counter each iteration
-        if int_cast != int_count:
-            print("Hello World.")
-            int_count += 1
-        
-        # stops the print once the count equals the number input
+        print("Hello World.")
+        int_count += 1
+    
+    # stops the print once the count equals the number input
         if int_cast == int_count:
             loop_active == False
-        
+            
     print(question_break)
 
     """
     23. Write a program that takes a word as an input from the keyboard
     and outputs each character in the word, seperated by a space.
     """
+    word_input = input("Please enter a word: ")
 
+    for letter in word_input:
+        print(f"{letter} ")
     print(question_break)
 
     """
