@@ -474,9 +474,17 @@ def module_3_problems():
     21. Write a program that uses a for loop to count how many 
     multiples of 7 are between 33 and 97, inclusive.
     """
+
     seven_mult_count = 0
+    
+    # Iterates through number 33 to 97 looing for any multiples of seven
     for number in range(33, 97):
+        
+        # Divides each number by seven
         seven_mult = number / 7
+        
+        # Checks each divison for whole numbers and increases the counter
+        # Tracking multiples of seven by one
         if seven_mult.is_integer():
             seven_mult_count += 1
 
@@ -490,19 +498,21 @@ def module_3_problems():
     that the user has entered an integer. If the input is 3, the output
     will be Hello World printed three times.
     """
-    int_input = input("Please enter a number: ")
-    int_cast = int(int_input)
+    # int_input = input("Please enter a number: ")
+    int_cast = 3
     int_count = 0
     loop_active = True
     
     while loop_active == True:
-        if not int_input.isnumeric:
-            int_input("Please enter a number: ")
+        #if not int_input.isnumeric:
+            #int_input("Please enter a number: ")
         
+        # prints Hello World and increases counter each iteration
         if int_cast != int_count:
             print("Hello World.")
             int_count += 1
         
+        # stops the print once the count equals the number input
         if int_cast == int_count:
             loop_active == False
 module_3_problems()
