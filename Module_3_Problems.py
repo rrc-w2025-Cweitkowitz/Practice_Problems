@@ -499,11 +499,8 @@ def module_3_problems():
     will be Hello World printed three times.
     """
     # int_input = input("Please enter a number: ")
-    int_cast = 3
+    int_cast = 3 #int(int_input)
     int_count = 0
-    loop_active = True
-    
-
 
     while int_cast != int_count:
         #if not int_input.isnumeric:
@@ -514,19 +511,26 @@ def module_3_problems():
     
     # stops the print once the count equals the number input
         if int_cast == int_count:
-            loop_active == False
-            
-    print(question_break)
+            print(question_break)
 
     """
     23. Write a program that takes a word as an input from the keyboard
     and outputs each character in the word, seperated by a space.
     """
     word_input = input("Please enter a word: ")
-
+    
+    #Holding space value 
+    seperator = " "
+    
+    # Empty list to hold letters
+    letter_list = []
+    
+    # Appends each letter to the list
     for letter in word_input:
-        print(f"{letter} ")
-    print(question_break)
+        letter_list.append(letter)
+    
+    #Joins each letter in the list to one string and prints a space after each list item
+    print(seperator.join(letter_list))
 
     """
     24. Write a program that takes an integer value as an input from the
@@ -537,7 +541,7 @@ def module_3_problems():
     """
 
 
-    print(question_break)
+
 
     """
     25. Using a loop, write a program that reads 10 integer values from
@@ -555,7 +559,7 @@ def module_3_problems():
     count how many 1s are in that word and output the count.
     """
 
-    print(question_break)
+ 
 
     """
     27.	Create a copy of the previous problem and update it with the 
@@ -564,7 +568,7 @@ def module_3_problems():
     until a word representing a valid binary number is input by the user.
     """
 
-    print(question_break)
+
 module_3_problems()
 
 if __name__ == '__Main__':
