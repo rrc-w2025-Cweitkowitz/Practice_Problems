@@ -482,7 +482,7 @@ def module_3_problems():
 
     print(seven_mult_count)
             
-
+    print(question_break)
 
     """
     22. Write a program that reads an integer value from the user and
@@ -490,6 +490,21 @@ def module_3_problems():
     that the user has entered an integer. If the input is 3, the output
     will be Hello World printed three times.
     """
+    int_input = input("Please enter a number: ")
+    int_cast = int(int_input)
+    int_count = 0
+    loop_active = True
+    
+    while loop_active == True:
+        if not int_input.isnumeric:
+            int_input("Please enter a number: ")
+        
+        if int_cast != int_count:
+            print("Hello World.")
+            int_count += 1
+        
+        if int_cast == int_count:
+            loop_active == False
 module_3_problems()
 
 if __name__ == '__Main__':
