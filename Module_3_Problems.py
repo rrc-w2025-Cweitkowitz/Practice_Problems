@@ -515,6 +515,53 @@ def module_3_problems():
         # stops the print once the count equals the number input
         if int_cast == int_count:
             loop_active == False
+        
+    print(question_break)
+
+    """
+    23. Write a program that takes a word as an input from the keyboard
+    and outputs each character in the word, seperated by a space.
+    """
+
+    print(question_break)
+
+    """
+    24. Write a program that takes an integer value as an input from the
+    keyboard and outputs the factorial of that number; the facotrial of
+    an integer n is n * (n − 1) * (n − 2)
+
+    EX: For instance, the factorial of 4 is 4 * 3 * 2 * 1, or 24
+    """
+
+
+    print(question_break)
+
+    """
+    25. Using a loop, write a program that reads 10 integer values from
+    the keyboard and outputs the minimum value of all the values entered.
+    """
+
+    print(question_break)
+
+    """
+    26.	Write a program that inputs a word representing a binary number 
+    (0s and 1s). First, your program should verify that it is indeed a 
+    binary number, that is, the number contains only 0s and 1s. If that 
+    is not the case, your program should print a message that the 
+    number is not a valid binary number. Then, your program should 
+    count how many 1s are in that word and output the count.
+    """
+
+    print(question_break)
+
+    """
+    27.	Create a copy of the previous problem and update it with the 
+    ollowing modification: If the word does not represent a valid binary 
+    number, the program should keep prompting the user for a new word 
+    until a word representing a valid binary number is input by the user.
+    """
+
+    print(question_break)
 module_3_problems()
 
 if __name__ == '__Main__':
