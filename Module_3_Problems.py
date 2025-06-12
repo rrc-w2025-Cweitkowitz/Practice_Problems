@@ -541,7 +541,8 @@ def module_3_problems():
     EX: For instance, the factorial of 4 is 4 * 3 * 2 * 1, or 24
     """
 
-    num_input = input("Please enter an integer value: ")
+    #num_input = input("Please enter an integer value: ")
+    num_input = 4
     fact_int = int(num_input)
     fact_counter = fact_int - 1
     fact_loop = True
