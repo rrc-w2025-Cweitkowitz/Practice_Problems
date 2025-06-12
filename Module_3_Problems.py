@@ -546,9 +546,6 @@ def module_3_problems():
     fact_counter = fact_int - 1
     fact_loop = True
     
-    #Factorial calculation  
-
-    
     while fact_loop == True:
         num_input
         
