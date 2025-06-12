@@ -517,8 +517,8 @@ def module_3_problems():
     23. Write a program that takes a word as an input from the keyboard
     and outputs each character in the word, seperated by a space.
     """
-    word_input = input("Please enter a word: ")
-    
+    # word_input = input("Please enter a word: ")
+    word_input = "Cheese"
     #Holding space value 
     seperator = " "
     
@@ -532,6 +532,7 @@ def module_3_problems():
     #Joins each letter in the list to one string and prints a space after each list item
     print(seperator.join(letter_list))
 
+    print(question_break)
     """
     24. Write a program that takes an integer value as an input from the
     keyboard and outputs the factorial of that number; the facotrial of
@@ -540,6 +541,30 @@ def module_3_problems():
     EX: For instance, the factorial of 4 is 4 * 3 * 2 * 1, or 24
     """
 
+    num_input = input("Please enter an integer value: ")
+    fact_int = int(num_input)
+    fact_counter = fact_int - 1
+    fact_loop = True
+    
+    #Factorial calculation  
+
+    
+    while fact_loop == True:
+        num_input
+        
+        # Calculation of a factorial that will work with any user input so long as its an integer
+        # Does the first calculation, makes the fact_int equal the number, reduced counter by one
+        # and loops until counter equals zero (otherwise the whole number will be zero).
+        if fact_counter != 0:
+            factorial = fact_int * fact_counter
+            fact_int = factorial
+            fact_counter -= 1
+        
+        # Triggers upon last factorial multiplication, stops loop and prints factorial result.
+        if fact_counter == 1:
+            fact_loop = False
+            print(factorial)
+        
 
 
 
