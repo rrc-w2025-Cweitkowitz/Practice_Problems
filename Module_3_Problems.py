@@ -562,17 +562,29 @@ def module_3_problems():
         if fact_counter == 1:
             fact_loop = False
             print(factorial)
+
+    print(question_break)
         
-
-
-
     """
     25. Using a loop, write a program that reads 10 integer values from
     the keyboard and outputs the minimum value of all the values entered.
     """
 
-    print(question_break)
-
+    int_list = []
+    int_counter = 0
+    
+    # appends an int type casted input to an empty list until 10 numbers are added
+    while int_counter != 10:
+        int_range_input = int(input("Please enter 10 integer values: "))
+        int_list.append(int_range_input)
+        int_counter += 1
+    
+    # Grabs smallest number and prints it
+    if int_counter == 10:
+        int_list_min = min(int_list)
+        print(int_list_min)
+    
+    
     """
     26.	Write a program that inputs a word representing a binary number 
     (0s and 1s). First, your program should verify that it is indeed a 
