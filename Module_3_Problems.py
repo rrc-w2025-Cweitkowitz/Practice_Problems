@@ -570,20 +570,21 @@ def module_3_problems():
     the keyboard and outputs the minimum value of all the values entered.
     """
 
-    int_list = []
-    int_counter = 0
+    #int_list = []
+    #int_counter = 10
     
     # appends an int type casted input to an empty list until 10 numbers are added
-    while int_counter != 10:
-        int_range_input = int(input("Please enter 10 integer values: "))
-        int_list.append(int_range_input)
-        int_counter += 1
+    # while int_counter != 10:
+        # int_range_input = int(input("Please enter 10 integer values: "))
+        # int_list.append(int_range_input)
+        # int_counter += 1
     
     # Grabs smallest number and prints it
-    if int_counter == 10:
-        int_list_min = min(int_list)
-        print(int_list_min)
+    # if int_counter == 10:
+    #    int_list_min = min(int_list)
+    #    print(int_list_min)
     
+    print(question_break)
     
     """
     26.	Write a program that inputs a word representing a binary number 
@@ -593,12 +594,38 @@ def module_3_problems():
     number is not a valid binary number. Then, your program should 
     count how many 1s are in that word and output the count.
     """
+    binary_input = (input("Please enter a binary word."))
+    zero_count = 0
+    one_count = 0
+    binary_count = 0
+
+    for number in binary_input:
+        # Checks entire binary input for anything not a 0 or a 1.
+        if binary_input != "0" or "1":
+            print("Input MUST be a binary (0 and or 1)")
+
+        # Adds to variable counter tracking number of zeros.
+        if number is "0":    
+            zero_count += 1
+        
+        # Adds to variable counter tracking number of ones.
+        if number is "1":    
+            one_count += 1
+    # Once the result is finalized it prints the total number of zeros and ones, increases the counter
+    # by one to ensure it only prints once.
+    if binary_count == 0:
+        print(f"Your word has {zero_count} many zeros and {one_count} many ones.")
+        binary_count += 1
+    
+            
+        
+        
 
  
 
     """
     27.	Create a copy of the previous problem and update it with the 
-    ollowing modification: If the word does not represent a valid binary 
+    following modification: If the word does not represent a valid binary 
     number, the program should keep prompting the user for a new word 
     until a word representing a valid binary number is input by the user.
     """
