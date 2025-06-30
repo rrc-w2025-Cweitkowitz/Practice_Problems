@@ -594,7 +594,8 @@ def module_3_problems():
     number is not a valid binary number. Then, your program should 
     count how many 1s are in that word and output the count.
     """
-    binary_input = (input("Please enter a binary word."))
+    #binary_input = (input("Please enter a binary word."))
+    binary_input = "1010101"
     zero_count = 0
     one_count = 0
     binary_count = 0
@@ -617,11 +618,7 @@ def module_3_problems():
         print(f"Your word has {zero_count} many zeros and {one_count} many ones.")
         binary_count += 1
     
-            
-        
-        
-
- 
+    print(question_break)
 
     """
     27.	Create a copy of the previous problem and update it with the 
@@ -629,6 +626,38 @@ def module_3_problems():
     number, the program should keep prompting the user for a new word 
     until a word representing a valid binary number is input by the user.
     """
+    Binaries_input = input("Please enter a binary number: ")
+    zero_counter = 0
+    one_counter = 0
+    binary_check = True
+    
+    for number in Binaries_input:
+
+        if number == "0":
+            zero_counter += 1
+            binary_check == True
+
+        
+        elif number == "1":
+            one_counter += 1
+            binary_check == True
+
+        elif number is not "0" or "1":
+            zero_counter == 0
+            one_counter == 0
+            binary_check == False
+            binaries_reinput = input("Word MUST be a binary! ")
+            Binaries_input == binaries_reinput
+    
+    if binary_check == True:
+        print(f"Your word has {zero_counter} zeros and {one_counter} ones!")
+    
+        
+
+
+
+
+
 
 
 module_3_problems()
