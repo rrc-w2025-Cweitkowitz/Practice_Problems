@@ -626,18 +626,18 @@ def module_3_problems():
     number, the program should keep prompting the user for a new word 
     until a word representing a valid binary number is input by the user.
     """
-    Binaries_input = input("Please enter a binary number: ")
+    # Binaries_input = input("Please enter a binary number: ")
+    binaries_input = "1010101"
     zero_counter = 0
     one_counter = 0
     binary_check = True
     
-    for number in Binaries_input:
+    for number in binaries_input:
 
         if number == "0":
             zero_counter += 1
             binary_check == True
 
-        
         elif number == "1":
             one_counter += 1
             binary_check == True
@@ -647,17 +647,65 @@ def module_3_problems():
             one_counter == 0
             binary_check == False
             binaries_reinput = input("Word MUST be a binary! ")
-            Binaries_input == binaries_reinput
+            binaries_input == binaries_reinput
     
     if binary_check == True:
         print(f"Your word has {zero_counter} zeros and {one_counter} ones!")
     
-        
+print(question_break)
+
+"""
+28.	Write a program that inputs a word representing a binary number 
+(0s and 1s). First, your program should check that it is indeed a 
+binary number, that is, the number contains only 0s and 1s. If that is 
+not the case, your program should output that the number is not a valid 
+binary number. If that word contains exactly two 1s, your program should 
+output that that word is "accepted," otherwise that it is "rejected."
+"""
+
+"""
+29.	Create a copy of the previous problem and update it with the 
+following modification: If the word does not represent a valid binary 
+number, the program should keep prompting the user for a new word until 
+a word representing a valid binary number is input by the user.
+"""
+
+"""
+30.	Write a program that inputs a word representing a binary number 
+(0s and 1s). First, your program should check that it is indeed a 
+binary number, that is, that it contains only 0s and 1s. If that is 
+not the case, your program should output that the number is not a valid 
+binary number. If that word contains at least three consecutive 1s, your 
+program should output that that word is "accepted," otherwise that it 
+is "rejected."
+"""
 
 
+"""
+31.	Write a program that inputs 7 float values from a file dja.txt that 
+represent the Dow Jones Average for 7 days. Your program should output 
+the lowest value for those 7 days and the number of the day on which the 
+lowest value occurred. For this program, instead of setting the initial 
+minimum value to the first value in the file, use the maximum value for 
+a float (sys.float_info.max). Be sure to handle the case of the file 
+being empty.
+"""
 
 
+"""
+32.	Write a program that takes website names as keyboard input until the 
+user types the word stop and counts how many of the website names are 
+commercial website names (i.e., end with .com), then outputs that 
+count. The input of the word stop should be case insensitive.
+"""
 
+"""
+33.	Using a loop, write a program that takes 10 values representing 
+exam grades (between 0 and 100) from the keyboard and outputs the 
+minimum value, maximum value, and average value of all the values 
+entered. Your program should not accept values less than 0 or greater 
+than 100.
+"""
 
 
 module_3_problems()
