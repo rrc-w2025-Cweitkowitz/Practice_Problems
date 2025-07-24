@@ -662,7 +662,8 @@ def module_3_problems():
     binary number. If that word contains exactly two 1s, your program should 
     output that that word is "accepted," otherwise that it is "rejected."
     """
-    two_binary_input = (input("Please enter a binary word: "))
+    #two_binary_input = (input("Please enter a binary word: "))
+    two_binary_input = "11"
     binary_check = True
     two_binary_one_counter = 0
 
@@ -691,6 +692,36 @@ def module_3_problems():
     number, the program should keep prompting the user for a new word until 
     a word representing a valid binary number is input by the user.
     """
+
+    q29_binary_input = input("Please enter a binary number: ")
+    q29_binary_check = True
+    q29_binary_one_counter = 0
+
+    
+    for number in q29_binary_input:
+
+       
+        
+        if q29_binary_check is True and number in q29_binary_input is "1":
+                q29_binary_one_counter += 1 
+
+                if q29_binary_check is True and q29_binary_one_counter == 2:
+                    print("This is an acceptable word.")
+            
+                else:
+                    print("Too many ones, the acceptable amount of ones is two.")
+                    q29_binary_check_instance = False
+                    q29_binary_check = q29_binary_check_instance
+        
+        if number != "1":
+            print("This is not a valid binary number.")
+            q29_binary_check = False
+    if binary_check == False:
+            q29_re_input = input("Please enter a valid binary response: ")
+            q29_binary_input = q29_re_input
+            print("test")
+        
+    
 
     """
     30.	Write a program that inputs a word representing a binary number 

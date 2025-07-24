@@ -6,7 +6,7 @@ Simple python problems designed to keep my knowledge of Python
 up to date.
 """
 
-___author___ = "Connor Weitkowitz"
+___author___ = "CW"
 ___version___ = "09/05/2025"
 
 question_break = ("\n************************\n")
