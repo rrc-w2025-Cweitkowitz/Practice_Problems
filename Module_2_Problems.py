@@ -27,8 +27,6 @@ def module_2_problems():
 
     # 1. Define a print statement that will produce the following output:
     #    Jo-Anne Sinclair: 123093
-    print("Jo-Anne Sinclair: 123093")
-
     print(question_break)
 
     name = "Jo-Anne Sinclair"
